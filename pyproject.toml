@@ -10,6 +10,7 @@ package-mode = false
 python = "3.9.19"
 Django = "4.2"
 django-filer = "^3.2.3"
+django-admin-sortable2 = "^2.2.4"
 
 [tool.poetry.group.dev.dependencies]
 pyright = "^1.1.389"

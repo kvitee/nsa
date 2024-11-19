@@ -1,4 +1,5 @@
 from django.contrib import admin
+from adminsortable2.admin import SortableAdminMixin
 
 from apps.slider.models import Slider, SliderEntry
 
@@ -9,5 +10,5 @@ class SliderAdmin(admin.ModelAdmin):
 
 
 @admin.register(SliderEntry)
-class SliderEntryAdmin(admin.ModelAdmin):
+class SliderEntryAdmin(SortableAdminMixin, admin.ModelAdmin):
     pass
