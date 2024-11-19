@@ -19,6 +19,8 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "easy_thumbnails",
+    "filer",
 ]
 
 MIDDLEWARE = [
@@ -82,5 +84,9 @@ USE_I18N = True
 USE_TZ = True
 
 STATIC_URL = "static/"
+MEDIA_URL = "media/"
+
+STATIC_ROOT = os.getenv("STATIC_ROOT", BASE_DIR / "static/")
+MEDIA_ROOT = os.getenv("MEDIA_ROOT", BASE_DIR / "media/")
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
