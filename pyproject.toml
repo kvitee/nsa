@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "nsa"
+version = "0.1.0"
+description = "Space Agency site"
+authors = ["Vladimir Kravtsov <kvitee41@gmail.com>"]
+readme = "README.md"
+package-mode = false
+
+[tool.poetry.dependencies]
+python = "3.9.19"
+Django = "4.1"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.389"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
