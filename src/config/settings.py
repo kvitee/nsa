@@ -10,6 +10,7 @@ SECRET_KEY = os.getenv("DJANGO_SECRET_KEY", "Dj@ng0-s3cRet")
 DEBUG = os.getenv("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = [
+    "127.0.0.1",
 ]
 
 INSTALLED_APPS = [
@@ -21,8 +22,8 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "easy_thumbnails",
     "filer",
-    "apps.slider",
     "adminsortable2",
+    "apps.slider",
 ]
 
 MIDDLEWARE = [

@@ -54,4 +54,4 @@ class SliderEntry(models.Model):
         db_table = "slider_entries"
         verbose_name = "элемент слайдера"
         verbose_name_plural = "элементы слайдеров"
-        ordering = ["number"]
+        ordering = ("number", )
