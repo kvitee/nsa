@@ -24,6 +24,7 @@ INSTALLED_APPS = [
     "filer",
     "adminsortable2",
     "apps.slider",
+    "apps.site",
 ]
 
 MIDDLEWARE = [
