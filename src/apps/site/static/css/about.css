@@ -1,0 +1,15 @@
+#about {
+  margin: 50px auto;
+}
+#about h1 {
+  font-size: 56px;
+}
+#about p {
+  font-size: 18px;
+  color: #3c3c3c;
+}
+@media (max-width: 752px) {
+  #about h1 {
+    font-size: 36px;
+  }
+}
