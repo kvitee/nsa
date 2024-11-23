@@ -1,0 +1,30 @@
+header {
+  background: #021a1e;
+}
+header > section {
+  flex-wrap: wrap;
+  min-height: 90px;
+}
+header .navbar-brand figure {
+  width: 120px;
+  height: 40px;
+}
+header nav a {
+  font-weight: 600;
+}
+header .btn-login {
+  width: 88px;
+  height: 44px;
+  line-height: 30px;
+  font-weight: 700;
+  background-color: #ff342b;
+  border-color: rgba(255, 52, 43, 0.5);
+}
+@media (max-width: 575.98px) {
+  header .navbar-brand figure {
+    width: 80px;
+  }
+  header nav {
+    order: 1;
+  }
+}
