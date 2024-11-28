@@ -11,11 +11,6 @@ img {
   object-fit: cover;
   object-position: center;
 }
-.container-xl {
-  max-width: 1170px;
-  padding: 0 15px;
-}
 .container-md {
   max-width: 780px;
-  padding: 0 15px;
 }
