@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" type="text/css" href={% static "css/common.css" %} />
     <link rel="stylesheet" type="text/css" href={% static "css/header.css" %} />
+    <link rel="stylesheet" type="text/css" href={% static "css/main.css" %} />
     <link rel="stylesheet" type="text/css" href={% static "css/about.css" %} />
     <link rel="stylesheet" type="text/css" href={% static "css/advantages.css" %} />
     <link rel="stylesheet" type="text/css" href={% static "css/photos.css" %} />
@@ -86,7 +87,7 @@
                 </section>
               </section>
             </section>
-            <section class="col filler py-5 py-md-0 ps-md-4">
+            <section class="col filler pt-5 pt-md-0 ps-md-4">
               <figure>
                 <img src={% static "img/space.jpg" %} alt="Космос">
               </figure>
@@ -95,7 +96,7 @@
         </article>
       </section>
       <section id="photos">
-        <article class="container-xl">
+        <article class="container-fluid">
           <h2>Фотографии</h2>
           <section class="slider photos-slider">
             {% for entry in slider_entries %}

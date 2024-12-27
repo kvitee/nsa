@@ -1,9 +1,12 @@
 #photos {
-  padding: 40px 0;
+  padding-top: 40px;
   background: #3c3c3c;
 }
+#photos .container-fluid {
+  max-width: 1170px;
+}
 #photos h2 {
-  margin: 1rem 0;
+  margin-bottom: 1rem;
   font-weight: 700;
   text-align: center;
   color: white;

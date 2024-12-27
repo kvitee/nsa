@@ -1,12 +1,11 @@
 #about {
   font-size: 18px;
-  margin: 50px auto;
 }
 #about .container-fluid {
   max-width: 780px;
 }
 #about h1 {
-  margin: 1.5rem 0;
+  margin-bottom: 1.5rem;
   font-size: 2em;
   font-weight: 700;
 }
