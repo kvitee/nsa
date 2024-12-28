@@ -96,14 +96,24 @@
         </article>
       </section>
       <section id="photos">
-        <article class="container-fluid">
+        <article class="container-fluid px-0 px-sm-3">
           <h2>Фотографии</h2>
-          <section class="slider photos-slider">
+          <section class="slider photos-slider mx-3 mx-sm-0 mx-md-auto">
             {% for entry in slider_entries %}
               <figure>
                 <img src="{{ entry.image.url }}"
                      alt="{{ entry.image.default_alt_text|default_if_none:"" }}" />
               </figure>
+            {% endfor %}
+          </section>
+          <section class="slider thumbnails-slider">
+            {% for entry in slider_entries %}
+              <section class="mx-2 mx-sm-1 mx-md-0">
+                <figure>
+                  {% load thumbnail %}
+                  <img src={% thumbnail entry.image 165x165 crop %} />
+                </figure>
+              </section>
             {% endfor %}
           </section>
         </article>
